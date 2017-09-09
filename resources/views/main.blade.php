@@ -55,9 +55,11 @@
 <section id="hero">
     <div class="hero-container">
         <div class="wow fadeIn">
-            <div class="hero-logo">
-                <img class="" src="img/logo.png" alt="Imperial">
-            </div>
+
+
+            <figure id="container" title="spin the truck"></figure>
+            <script src="js/d3.v3.min.js"></script>
+            <script src="js/transmit_js_3dtruck.min.js"></script>
 
             @yield('content')
 
