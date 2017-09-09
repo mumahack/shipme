@@ -14,3 +14,6 @@
 Route::get('/', "Suche@home");
 
 Route::post('/suche', "Suche@suche");
+
+
+Route::get('/debug', "Suche@debug");
