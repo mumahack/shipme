@@ -3,61 +3,61 @@
 @section('content')
 
 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 ">
+                <div class="inputbox well well-lg">
+                    <form class="form-horizontal" method="post" action="suche.php">
 
-    <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4 ">
-            <div class="inputbox well well-lg">
-                <form class="form-horizontal" method="post" action="suche.php">
-
-                    <div class="form-group highlight">
-
-                        <div class="col-sm-3">
-                            stop
-                        </div>
-
-                        <div class="col-sm-3">
-                            distance
-                        </div>
-
-                        <div class="col-sm-3">
-                            additional time
-                        </div>
-                        <div class="col-sm-3">
-                            accept
-                        </div>
-                    </div>
-
-                @foreach ($stops as $item)
-
-                        <div class="form-group">
+                        <div class="form-group highlight">
 
                             <div class="col-sm-3">
-                                {{ $item["stopName"] }}
+                                stop
                             </div>
 
                             <div class="col-sm-3">
-                                 {{ $item["distanz"] }}
+                                distance
                             </div>
 
                             <div class="col-sm-3">
-                                  {{ $item["zusatzZeit"]}}
+                                additional time
                             </div>
                             <div class="col-sm-3">
+                                accept
+                            </div>
+                        </div>
+
+                        @foreach ($stops as $item)
+
+                            <div class="form-group">
+
+                                <div class="col-sm-3">
+                                    {{ $item["stopName"] }}
+                                </div>
+
+                                <div class="col-sm-3">
+                                    {{ $item["distanz"] }}
+                                </div>
+
+                                <div class="col-sm-3">
+                                    {{ $item["zusatzZeit"]}}
+                                </div>
+                                <div class="col-sm-3">
                                     <input type="checkbox" value="">
+                                </div>
                             </div>
-                        </div>
 
-                    @endforeach
+                        @endforeach
 
-                    <button type="submit" class="btn btn-success"> Los </button>
+                        <button type="submit" class="btn btn-success"> Los</button>
 
-                </form>
+                    </form>
+                </div>
             </div>
+            <div class="col-md-3"></div>
         </div>
-        <div class="col-md-4"></div>
     </div>
-
 
 
 
