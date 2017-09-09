@@ -6,9 +6,9 @@
                 <?php
                 foreach(array(
 
-                array("stopName"=>"München","zeit"=>"10 Stunden"),
-                array("stopName"=>"Hamburg","zeit"=>"12 Stunden"),
-                array("stopName"=>"Berlin","zeit"=>"13 Stunden"),
+                    array("stopName"=>"München","zeit"=>"10 Stunden"),
+                    array("stopName"=>"Hamburg","zeit"=>"12 Stunden"),
+                    array("stopName"=>"Berlin","zeit"=>"13 Stunden"),
                 ) as $item) {
 
                 ?>
@@ -18,7 +18,7 @@
                     <div class="col-sm-5">
                         <?php
                         echo $item["stopName"];
-                    ?>
+                        ?>
                     </div>
 
                     <div class="col-sm-5">
@@ -26,8 +26,8 @@
                     </div>
                 </div>
                 <?php
-                    }
-                    ?>
+                }
+                ?>
 
 
             </form>

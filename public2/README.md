@@ -1,2 +1,0 @@
-# shipme
-ShipMe
