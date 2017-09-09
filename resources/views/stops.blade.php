@@ -5,10 +5,13 @@
 
     <div class="container-fluid">
         <div class="row">
+
+
             <div class="col-md-3"></div>
             <div class="col-md-6 ">
                 <div class="inputbox well well-lg">
-                    <form class="form-horizontal" method="post" action="suche.php">
+                    <form class="form-horizontal" method="post" action="stops">
+                        <input type="hidden" name="serialized" value="{{ $json }}">
 
                         <div class="form-group highlight">
 
@@ -28,7 +31,7 @@
                             </div>
                         </div>
 
-                        @foreach ($stops as $item)
+                        @foreach ($stops as $key => $item)
 
                             <div class="form-group">
 
@@ -44,13 +47,14 @@
                                     {{ $item["zusatzZeit"]}}
                                 </div>
                                 <div class="col-sm-3">
-                                    <input type="checkbox" value="">
+                                    <input type="checkbox" name="checked[]" value="{{ $key }}">
                                 </div>
                             </div>
 
                         @endforeach
 
                         <button type="submit" class="btn btn-success"> Los</button>
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                     </form>
                 </div>

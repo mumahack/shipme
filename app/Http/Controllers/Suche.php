@@ -19,19 +19,30 @@ class Suche extends Controller
         $src = $_POST["src"];
 
         $map = new MapCalculator();
-        $result = $map->calculateRoute( $src, $dst);
+        $result = $map->calculateRoute($src, $dst);
 
-        return view('stops', array("stops" => $result));
+        return view('stops', array("stops" => $result, "json" => json_encode($result)));
     }
 
-    public function debug(){
+
+    public function debug()
+    {
 
         $map = new MapCalculator();
-        $result = $map->calculateRoute( 'Hufeisenstraße 10, München', 'Heimpertstrasse 6d, München');
+        $result = $map->calculateRoute('Hufeisenstraße 10, München', 'Heimpertstrasse 6d, München');
         print_r($result);
     }
 
-    public function stops(){
+    public function stops()
+    {
+
+
+        $json = $_POST["serialized"];
+        $jsonResult = json_decode($json, true);
+        foreach ($_POST["checked"] as $item) {
+            $result[] = $jsonResult[$item];
+        }
+        return view('choosenstops', array("stops" => $result, "json" => json_encode($result)));
 
     }
 }

@@ -18,4 +18,4 @@ Route::post('/suche', "Suche@suche");
 
 Route::get('/debug', "Suche@debug");
 
-Route::get('/stops', "Suche@stops");
+Route::post('/stops', "Suche@stops");
