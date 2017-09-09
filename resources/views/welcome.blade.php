@@ -25,8 +25,6 @@
     <link href="favicon.ico" rel="shortcut icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
-
     <!-- Bootstrap CSS File -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -38,6 +36,7 @@
     <link href="css/style.css" rel="stylesheet">
 
     <link href="css/_inputdata.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
 
     <!-- =======================================================
       Theme Name: Imperial
