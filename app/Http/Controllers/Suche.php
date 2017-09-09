@@ -15,12 +15,13 @@ class Suche extends Controller
     public function suche()
     {
 
-        $arr = array(
-            array("stopName" => "München", "zeit" => "12 Stunden"),
-            array("stopName" => "Hamburg", "zeit" => "12 Stunden"),
-            array("stopName" => "Berlin", "zeit" => "13 Stunden")
-        );
-        return view('stops', array("stops" => $arr));
+        $dst = $_POST["dst"];
+        $src = $_POST["src"];
+
+        $map = new MapCalculator();
+        $result = $map->calculateRoute( $src, $dst);
+
+        return view('stops', array("stops" => $result));
     }
 
     public function debug(){

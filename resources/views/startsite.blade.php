@@ -10,14 +10,14 @@
                     <div class="form-group">
                         <label for="inputEmail3" class="col-sm-2 control-label">Von</label>
                         <div class="col-sm-10">
-                            <input class="form-control" name="email" id="inputEmail3" placeholder="Start"
+                            <input class="form-control" name="src" id="inputEmail3" placeholder="Start"
                                    value="Hufeisenstraße 10, München">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="inputPassword3" class="col-sm-2 control-label">Bis</label>
                         <div class="col-sm-10">
-                            <input class="form-control" name="pass" id="inputPassword3" placeholder="Ziel"
+                            <input class="form-control" name="dst" id="inputPassword3" placeholder="Ziel"
                                    value="Heimpertstrasse 6d, München">
                         </div>
                     </div>
