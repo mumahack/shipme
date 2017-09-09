@@ -59,7 +59,9 @@
         <div class="hero-logo">
           <img class="" src="img/logo.png" alt="Imperial">
         </div>
-        <?php include("box.html") ?>
+        <?php //include("stops.html") ?>
+          <?php include("box.html") ?>
+
 
       </div>
     </div>
