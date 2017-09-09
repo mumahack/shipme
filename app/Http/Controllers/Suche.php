@@ -30,4 +30,8 @@ class Suche extends Controller
         $result = $map->calculateRoute( 'Hufeisenstraße 10, München', 'Heimpertstrasse 6d, München');
         print_r($result);
     }
+
+    public function stops(){
+
+    }
 }

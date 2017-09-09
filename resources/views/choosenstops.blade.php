@@ -13,7 +13,7 @@
                     <div class="form-group highlight">
 
                         <div class="col-sm-3">
-                            stop
+                            choosen stop
                         </div>
 
                         <div class="col-sm-3">
@@ -23,9 +23,7 @@
                         <div class="col-sm-3">
                             additional time
                         </div>
-                        <div class="col-sm-3">
-                            accept
-                        </div>
+
                     </div>
 
                 @foreach ($stops as $item)
@@ -43,14 +41,10 @@
                             <div class="col-sm-3">
                                   {{ $item["zusatzZeit"]}}
                             </div>
-                            <div class="col-sm-3">
-                                    <input type="checkbox" value="">
-                            </div>
+
                         </div>
 
                     @endforeach
-
-                    <button type="submit" class="btn btn-success"> Los </button>
 
                 </form>
             </div>
