@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\MapCalculator;
+
 class Suche extends Controller
 {
     public function home()
@@ -21,15 +23,10 @@ class Suche extends Controller
         return view('stops', array("stops" => $arr));
     }
 
-    public function debug()
-    {
-        $response = \GoogleMaps::load('directions')
-            ->setParam([
-                'origin' => 'place_id:ChIJ685WIFYViEgRHlHvBbiD5nE',
-                'destination' => 'place_id:ChIJA01I-8YVhkgRGJb0fW4UX7Y',
-            ])->get();
+    public function debug(){
 
-        print_r($response);
-
+        $map = new MapCalculator();
+        $result = $map->calculateRoute( 'Hufeisenstraße 10, München', 'Heimpertstrasse 6d, München');
+        print_r($result);
     }
 }
