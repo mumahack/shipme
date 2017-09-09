@@ -619,4 +619,7 @@ body.mobile-nav-active {
   background: #848291;
   color: #f0ebff; }
 
+#container {
+  height: 400px; }
+
 /*# sourceMappingURL=style.css.map */
