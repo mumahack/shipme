@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('startsite');
-});
-Route::post('/suche', function () {
-    return view('stops');
-});
+Route::get('/', "Suche@home");
+
+Route::post('/suche', "Suche@suche");

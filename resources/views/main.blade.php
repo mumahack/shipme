@@ -38,6 +38,8 @@
     <link href="css/_inputdata.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
 
+
+
     <!-- =======================================================
       Theme Name: Imperial
       Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
@@ -53,13 +55,20 @@
   Hero Section
 ============================-->
 <section id="hero">
+
+
     <div class="hero-container">
         <div class="wow fadeIn">
+
+
 
 
             <figure id="container" title="spin the truck"></figure>
             <script src="js/d3.v3.min.js"></script>
             <script src="js/transmit_js_3dtruck.min.js"></script>
+
+
+
 
             @yield('content')
 
