@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('startsite');
+});
+Route::post('/suche', function () {
+    return view('stops');
 });

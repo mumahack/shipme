@@ -59,6 +59,7 @@
                 <img class="" src="img/logo.png" alt="Imperial">
             </div>
 
+            @yield('content')
 
 
         </div>
