@@ -10,26 +10,47 @@
             <div class="inputbox well well-lg">
                 <form class="form-horizontal" method="post" action="suche.php">
 
-                    @foreach ($stops as $item)
+                    <div class="form-group highlight">
 
+                        <div class="col-sm-3">
+                            stop
+                        </div>
 
+                        <div class="col-sm-3">
+                            distance
+                        </div>
 
+                        <div class="col-sm-3">
+                            additional time
+                        </div>
+                        <div class="col-sm-3">
+                            accept
+                        </div>
+                    </div>
 
+                @foreach ($stops as $item)
 
                         <div class="form-group">
-                            <label class="col-sm-2 control-label">Zwischenstopp</label>
 
-                            <div class="col-sm-5">
+                            <div class="col-sm-3">
                                 {{ $item["stopName"] }}
                             </div>
 
-                            <div class="col-sm-5">
-                                <button type="submit" class="btn btn-info">  {{ $item["zeit"] }}</button>
+                            <div class="col-sm-3">
+                                 {{ $item["distanz"] }}
+                            </div>
+
+                            <div class="col-sm-3">
+                                  {{ $item["zusatzZeit"]}}
+                            </div>
+                            <div class="col-sm-3">
+                                    <input type="checkbox" value="">
                             </div>
                         </div>
 
                     @endforeach
 
+                    <button type="submit" class="btn btn-info"> Los </button>
 
                 </form>
             </div>
