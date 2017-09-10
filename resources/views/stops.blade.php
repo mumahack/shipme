@@ -16,7 +16,7 @@
                         <div class="form-group highlight">
 
                             <div class="col-sm-3">
-                                breakpoint
+                                Stopover
                             </div>
 
                             <div class="col-sm-3">
@@ -53,7 +53,7 @@
 
                         @endforeach
 
-                        <button type="submit" class="btn btn-success"> Los</button>
+                        <button type="submit" class="btn btn-success">GO</button>
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                     </form>

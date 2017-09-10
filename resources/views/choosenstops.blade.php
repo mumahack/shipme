@@ -13,7 +13,7 @@
                     <div class="form-group highlight">
 
                         <div class="col-sm-3">
-                            breakpoint
+                            stopover
                         </div>
 
                         <div class="col-sm-3">
