@@ -117,6 +117,12 @@
             <div class="col-md-6 col-md-push-6 about-content">
                 <h2 class="about-title">We provide great services and ideas</h2>
                 <p class="about-text">
+                    Imagine Techfest were a factory.
+                    Techfest trasports a container full of awesome goodies from Munich to for example Berlin.
+                    When the goodies are delivered, and the truck is about to return, the truck WOULD go back empty,
+                    if there were not „Ship Me (Up)“. It is a smart container, or automated mini warehouse system inside a
+                    standerd container, so the pooling of the container space is managed by the container and not by the
+                    truck driver or extra personnel.
                    </p>
                 <p class="about-text">
                     </p>
